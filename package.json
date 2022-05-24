@@ -1,5 +1,5 @@
 {
-  "name": "github-package-template",
+  "name": "@timfehrmann/github-package-template",
   "version": "0.1.0",
   "description": "This is a template for test driven packages. Packages automatically get created in the github package registry using github actions.",
   "author": "Tim Fehrmann",
