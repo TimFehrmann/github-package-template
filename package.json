@@ -1,0 +1,38 @@
+{
+  "name": "github-package-template",
+  "version": "0.1.0",
+  "description": "This is a template for test driven packages. Packages automatically get created in the github package registry using github actions.",
+  "author": "Tim Fehrmann",
+  "main": "lib/index.js",
+  "types": "lib",
+  "homepage": "https://github.com/TimFehrmann/github-package-template#readme",
+  "keywords": [
+  ],
+  "bugs": {
+    "url": "https://github.com/TimFehrmann/github-package-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimFehrmann/github-package-template"
+  },
+  "publishConfig": {
+    "@timfehrmann:registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "dev": "nodemon src/index.ts",
+    "start": "node dist/index.js",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "test": "jest --coverage --coverageDirectory='coverage'"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "jest": "^27.4.7",
+    "ts-jest": "^27.1.2",
+    "ts-node-dev": "^1.1.8",
+    "tslint": "^5.17.0"
+  }
+}
